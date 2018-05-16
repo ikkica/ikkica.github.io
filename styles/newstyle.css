@@ -1,0 +1,625 @@
+.row {
+  width: 100%;
+}
+.row img {
+  width: 33.3%;
+  display: inline-block;
+}
+html {
+  float: left;
+  width: 100%;
+}
+body {
+  background-color: white;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+    font-family: 'Consolas', sans-serif;
+
+}
+
+
+p {
+  font-family: 'Source Code Pro', monospace, sans-serif;
+  text-align: justify;
+  font-size: 2vw;
+}
+
+h3 {
+  font-family: 'Source Code Pro', monospace, sans-serif;
+  font-size: 3em;
+}
+
+#start {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/*navigation---------------------------------------------------------------------------------------------------------*/
+
+
+#myNav{
+  display: none;
+  position: fixed;
+  top: 2%;
+  font-family: 'Source Code Pro';
+  z-index: 1;
+  text-decoration: none;
+
+}
+
+#myNav a {
+    margin-left: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #EA0673;
+}
+
+/*roler---------------------------------------------------------------------------------------------------*/
+.content {
+  position: relative;
+  margin-top: 2vw;
+/*  left: 50%;
+  transform: translate(-50%, -50%);*/
+  font-family: 'Source Code Pro',monospace, sans-serif;
+  color: black;
+  height: 160px;
+  overflow:hidden;
+}
+
+.visible {
+  overflow:hidden;
+/*  height: 25px;
+*/
+}
+
+.content ul li {
+}
+
+
+.visible ul {
+  margin-top:0;
+  padding-left:0;
+  text-align:center;
+  list-style:none;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+.visible ul li {
+/*  line-height:50px;
+  margin:0;*/
+}
+
+@-webkit-keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-webkit-keyframes change {
+  0%, 12%, 100% {transform:translateY(0);}
+  17%,29% {transform:translateY(-25%);}
+  34%,46% {transform:translateY(-50%);}
+  51%,63% {transform:translateY(-75%);}
+  68%,80% {transform:translateY(-50%);}
+  85%,97% {transform:translateY(-25%);}
+}
+
+@keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@keyframes change {
+  0%, 12%, 100% {transform:translateY(0);}
+  17%,29% {transform:translateY(-25%);}
+  34%,46% {transform:translateY(-50%);}
+  51%,63% {transform:translateY(-75%);}
+  68%,80% {transform:translateY(-50%);}
+  85%,97% {transform:translateY(-25%);}
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*
+.like{
+	width: 70vw;
+	height: 700px;
+	background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+   
+}
+
+.dislike {
+	width: 50vw;
+	height: 700px;
+	background-color: pink;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: 700px;
+
+    
+}
+
+.dislike p {
+	padding-left: 0.5em;
+	color: black;
+	font-family: 'Consolas', sans-serif;
+    	font-size: 2em;
+
+
+}
+
+.like p {
+	padding-left: 0.5em;
+	padding-top: 2em;
+	color: white;
+	font-family: 'Consolas', sans-serif;
+	font-size: 2em;
+
+}
+
+h1 {
+   position: absolute;
+   left: 45%;
+   margin-top: 0;
+   color: blue;
+   font-family: 'Consolas', sans-serif;
+   font-size: 4em;
+   z-index: 1;
+   vertical-align: middle;
+
+}*/
+
+#design1{
+    width:100%;
+    height:40vw;
+    position:relative;
+}
+/*/////////////////////////////////BOX 1///////////////////////////////*/
+.box1{
+  position: relative;
+    background-color: white;
+    width: 60vw;
+    height: 40vw;
+    
+}
+
+.box1 img {
+  width: 40vw;
+  position: absolute;
+   margin-left: 12%;
+  margin-top: 12%;
+
+  
+}
+
+
+
+.box1 .overbox1 {
+  position: absolute;
+  width: 60vw;
+  height: 40vw;
+  background: blue;
+  opacity: 0;
+
+}
+
+
+.box1:hover .overbox1 { opacity: 0.8; }
+
+
+
+.overtext1 {
+  position: absolute;
+  display: block;
+  color: white;
+  margin: 5vw;
+  font-size: 1.2vw;
+}
+
+/*//////////////////////////////////////////BOX 2//////////////////////////////////////////*/
+
+
+.box2{
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40vw;
+    height: 40vw;
+    
+}
+
+.box2 img {
+  width: 28vw;
+  position:absolute;
+  right: 15%;
+  top: 15%;
+  
+}
+
+
+
+.box2 .overbox2 {
+  width: 40vw;
+  position:absolute;
+  right: 0%;
+  top: 0%;
+  opacity: 9;
+  height: 40vw;
+  background: black;
+  opacity: 0;
+
+}
+
+
+.box2:hover .overbox2 { opacity: 0.8; }
+
+.overtext2 {
+  position: absolute;
+  display: block;
+  color: white;
+  margin: 5vw;
+  font-size: 1.2vw;
+}
+
+/*////////////////////////////////BOX 3//////////////////////////////////////*/
+
+#design3{
+    background-color: orange;
+    width:100%;
+    height:40vw;
+    position:relative;
+}
+
+.box3{
+    background-color: #af93dd;
+    position: absolute;
+    right: 0%;
+    width: 60%;
+    height: 40vw;
+    
+}
+
+.box3 img {
+  width: 40vw;
+  position:absolute;
+  left: 18%;
+  top:6vw;
+
+}
+
+
+
+.box3 .overbox3 {
+  width: 60vw;
+  position:absolute;
+  right: 0%;
+  top: 0%;
+  opacity: 9;
+  width: 60vw;
+  height: 40vw;
+  background: #af93dd;
+  opacity: 0;
+
+}
+
+
+.box3:hover .overbox3 { opacity: 0.8; }
+
+.overtext3 {
+  position: absolute;
+  display: block;
+  color: white;
+  margin: 5vw;
+  font-size: 1.2vw;
+}
+
+/*//////////////////////////////////////////BOX 4//////////////////////////////////////////*/
+
+
+.box4{
+    background-color: #95f2fd;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40vw;
+    height: 40vw;
+    
+}
+
+.box4 img {
+  width: 30vw;
+  position:absolute;
+  right: 15%;
+  top: 10%;
+  
+}
+
+.box4 .overbox4 {
+  width: 40vw;
+  position:absolute;
+  left: 0%;
+  top: 0%;
+  opacity: 9;
+  height: 40vw;
+  background: #32ca7d;
+  opacity: 0
+
+}
+
+
+.box4:hover .overbox4 { opacity: 0.8; }
+
+.overtext4 {
+  position: absolute;
+  display: block;
+  color: white;
+  margin: 5vw;
+  font-size: 1.2vw;
+}
+
+/*//////////////////////////////BOX 5/////////////////////////////////////////*/
+
+#design5{
+    /*background-color: black;*/
+    width:100%;
+    height:40vw;
+    position:relative;
+}
+
+.box5{
+    background-color: #FFF7A1;
+    width: 60vw;
+    height: 40vw;
+    
+}
+
+.box5 img {
+  width: 40vw;
+  position:absolute;
+  left: 8%;
+  top: 20%;
+  
+}
+
+
+
+.box5 .overbox5 {
+  position: absolute;
+  width: 60vw;
+  height: 40vw;
+  background: #FE276E;
+  opacity: 0;
+
+}
+
+
+.box5:hover .overbox5 { opacity: 0.8; }
+
+
+
+.overtext5 {
+  position: absolute;
+  display: block;
+  color: white;
+  margin: 5vw;
+  font-size: 1.2vw;
+}
+
+/*//////////////////////////////////////////BOX 2//////////////////////////////////////////*/
+
+
+.box6{
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40vw;
+    height: 40vw;
+    
+}
+
+.box6 img {
+  width: 25vw;
+  position:absolute;
+  right: 17%;
+  top: 20%;
+  border:none;
+  
+}
+
+
+
+.box6 .overbox6 {
+  width: 40vw;
+  position:absolute;
+  right: 0%;
+  top: 0%;
+  opacity: 9;
+  height: 40vw;
+  background: black;
+  opacity: 0;
+
+}
+
+
+.box6:hover .overbox6 { opacity: 0.8; }
+
+.overtext6 {
+  position: absolute;
+  
+  display: block;
+  color: white;
+  margin: 5vw;
+  font-size: 1.2vw;
+}
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 768px) {
+
+  p {
+    font-size: 3vw;
+  }
+
+  h3 {
+    font-size: 4vw;
+  }
+
+  .visible {
+/*    height: 11vw;
+*/  }
+
+  
+  span {
+    font-size: 8vh;
+  }
+
+  .logo {
+    top: 30%;
+    width: 50vw;
+  }
+
+
+  .box1 img {
+    position: absolute;
+    top:1vw;
+  }
+
+  .box3 img {
+    margin-top: 1vw;
+  }
+
+   .box4 img {
+    position: absolute;
+    top:5vw;
+  }
+
+  .box5 img {
+    position: absolute;
+    top: 7vw;
+  }
+
+
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+
+ 
+
+
+  span {
+    font-size: 8vh;
+    color: #EA0673;
+  }
+
+   .logo {
+    top: 40%;
+    width: 30vw;
+  }
+
+
+  .content {
+   top: 50%;
+
+  }
+
+ #design1 {
+  max-height: 40vw;
+  }
+
+.box1 {
+  max-height: 40vw;
+  }
+  
+  .box1 img {
+    position: absolute;
+    top:2%;
+  }
+
+  #design3 {
+        max-height: 40vw;
+  }
+
+  .box3 {
+    max-height: 40vw;
+  }
+
+  .box3 img {
+    top:7vw ;
+  }
+
+  #design5 {
+        max-height: 40vw;
+  }
+
+  .box5 {
+    max-height: 40vw;
+  }
+
+  .box5 img {
+    top:7vw ;
+  }
+
+  .overbox5 {
+        max-height: 40vw;
+
+  }
+
+  .overbox6 {
+    max-height: 40vw;
+  }
+
+  .box6 {
+    max-height: 40vw;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+ 
+
+  span {
+    font-size: 4vw;
+  }
+
+ .logo {
+    top: 10vw;
+    width: 40vw;
+  }
+
+
+  .content {
+   top: 60%;
+  }
+
+   .visible {
+/*    height: 55px!important;
+*/  }
+
+
+}
+
+
+
